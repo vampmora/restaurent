@@ -1,0 +1,217 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --light-black:#262626;
+    --white:#fff;
+    --white-smoke:#f5f5f5;
+    --darker-white:#c8c3ba;
+
+    /*fonts*/
+    --edu-vice: 'Edu VIC WA NT Beginner', cursive;
+    --Frank: 'Frank Ruhl Libre', serif;
+    --lobster: 'Lobster', cursive;
+    --Pathway: 'Pathway Gothic One', sans-serif;
+    --Rubik: 'Rubik', sans-serif;
+    --Shrikhand:'Shrikhand', cursive;
+}
+
+/*menu*/
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:var(--white);
+    font-family: var(--Pathway);
+    
+}
+
+.navbar{
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    padding:0 25px;
+    width: 100%;    /*i add the those last 3 2 make it stay when scrolling*/  /**/
+    position: fixed;       /**/
+    top: 0;   /*i add it extra coz without it it will make the nav in the middle of the screen here*/ 
+    /*background-color: #262626;*/
+    /* background-color: rgba(0,0,0,0.6);   this what i put 1st but 2nd look better i think will see later  */
+   /* background-color: #262626;*/
+                     /* background-color: transparent;*/    background-color: rgba(0,0,0,0.6);
+}
+
+.nav-brand{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 5px;
+    letter-spacing: 4px;
+    font-family:var(--Pathway);
+}
+
+.nav-menu{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.7s ease;
+    color:red;  /*new add*/
+    font-size: 1.2rem;
+}
+
+.nav-link:hover{
+   color:crimson;
+   text-decoration: underline crimson  ;
+   text-underline-offset:5px;
+   transition:  .3s ease-in-out;
+   font-weight: 600;
+}
+
+.hamburger{
+    display:none;
+    cursor: pointer;
+    
+}
+
+.bar{
+    display:block;
+    width:25px;
+    height:3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: var(--white);    
+    transition: .3s ease;
+   
+}
+
+/*media quire for hamburger menu*/
+@media(max-width:768px){
+    
+    .hamburger{
+        display: block;
+    }
+
+    /*switching bars 2 x*/
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed; /*when we scroll down this will ensure the menu will be on the screen*/
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+       /* background-color: var(--light-black);  removed it and will make glass color*/
+        width:100%;
+        text-align: center;
+        transition: .5s ease-in-out;
+        max-height: 100vh;/*i add the last 3 lins to make it look better '135- 137'*/
+       /* padding:30%;
+       /* font-size: 1.5rem;*/
+       margin-top:150px;
+       padding:10%;
+      
+    }
+   
+
+    .nav-item{
+        margin:16px 0;  /*2 give space up and down between them when they appear*/
+    }
+     
+    /*trying 2 make line move under the links on hover*/
+      .nav-menu .nav-link{
+        position: relative;
+      }
+      .nav-menu .nav-link::after{
+        content: '';
+        position: absolute;
+        bottom: -5px;
+       /* top:20px;   OR i can use top instead of bottom*/
+         left: 0;
+        width:100%;
+        height: 1px;
+        /*background-color: crimson;*/
+        display: none;
+       
+      }
+
+      .nav-menu .nav-link:hover::after{
+        left:0;
+        width:100%;
+        display: block;
+      }
+      /*end here*/
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    /*glass effect for menu*/
+    #glass{
+        background:linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(225, 225, 225, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+       /*for shadow*/ /*i think i will remove the shadow*/
+       border: 1px solid rgba(225, 225, 225, 0.18);
+       border-radius: 5px;
+       box-shadow: 0 8px 32px 0 rgba(0 , 0, 0, 0.37);
+        
+    }
+}
+
+
+  body{
+    background-image: url(/images/13.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /*filter: blur();*/
+  }
+ 
+
+  h2{
+
+
+     display:flex;
+     color:#fff;
+     align-items: center;
+     justify-content: center;
+      /*height:100vh; */
+     font-size: 3rem;
+     min-width: 100%;
+     background-color: rgba(51, 48, 48, 0.33);  /*do as a glass effect*/
+     height:250px;
+     /*position: absolute;*/
+     margin-top:300px;
+     text-align: center;
+     padding: 0 10px;
+     font-family: var(--Rubik);
+       
+  }
+
+
+ 
