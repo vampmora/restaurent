@@ -1,16 +1,3 @@
-// const hamburger = document.querySelector('.hamburger');
-// const navMenu = document.querySelector('.nav-menu');
-
-// hamburger.addEventListener('click', ()=>{
-//     hamburger.classList.toggle('.active');
-//     navMenu.classList.toggle('.active');
-// })
-
-// document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click',()=>{
-//     hamburger.classList.remove('active');
-//     navMenu.classList.remove('active');
-// }))
-
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -19,51 +6,16 @@ hamburger.addEventListener('click', ()=>{
     navMenu.classList.toggle('active');
 });
 
-//this part little hard 2 get but its 2 remove the menu after clicking on any link of them
+// its 2 remove the menu after clicking on any link of them
 
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', ()=>{
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
 }));
 
-//testing audio
-// function playMe(){
-//     document.getElementById('mySong').play();
-//     document.getElementById('song-status').innerHTML = 'song is playing';
-// }
-
-// function pauseMe(){
-//     document.getElementById('mySong').pause();
-//     document.getElementById('song-status').innerHTML = 'song is paused';
-// }
 
 
-//with mobile its working good 2 make the section part disappear but its not there when its full screen:()
-// let a;
-// function show_hide(){
-//     if(a===1){
-//         document.getElementById('textIco').style.display='inline';
-//         return a = 0;
-//     } else {
-//         document.getElementById('textIco').style.display = 'none';
-//         return a=1;
-//     }
-// }
-
-
-// let b;
-// function show_hide(){
-//     if(b===0){
-//         document.getElementById('textIco').style.display='inline';
-//         return b = 0;
-//     } else {
-//         document.getElementById('textIco').style.display = 'none';
-//         return b=1;
-//     }
-// }
-
-
-//this is working good, when i press hamburger menu the text ll disappear and when i remove it it ll appear 
+//when user press hamburger menu the text ll disappear and when user remove it, it ll appear 
 function toggle(){
     let x = document.getElementById('textIco');
 
@@ -72,14 +24,6 @@ function toggle(){
     } else {
         x.style.display = 'none';
     }
-}
-
-
-
-
-//popup
-function togglePopup(){
-    document.getElementById('popup-1').classList.toggle('active');
 }
 
 
