@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 
 
 
-//when user press hamburger menu the text ll disappear and when user remove it, it ll appear 
+ 
 function toggle(){
     let x = document.getElementById('textIco');
 
@@ -30,7 +30,7 @@ function toggle(){
 //scroll
 let mybutton = document.getElementById("toTopBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+ 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -41,7 +41,7 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+ 
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
