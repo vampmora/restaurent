@@ -39,11 +39,11 @@ section{
     border-radius: 50%;
     transform: translate(-420px, -180px);
 }
-/*will copy section::before and make it after and  ll change width, height & transform:translate, last part will make us create another circle */
+ 
  section::after{    
      content: '';
     position:absolute;
-    width:320px;    /*it was 350 in the beginning */
+    width:320px;    
      height:320px;
    /* background:linear-gradient(#2196f3, #83d3ff);  */ 
     border-radius: 50%;
@@ -57,7 +57,7 @@ section{
     max-width: 1000px;
     padding:50px;
   
-   /* background: rgba(255, 255, 255, 0.33); removed it and did it darker down*/ 
+  
    background: rgba(0, 0, 0, 0.6);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -74,7 +74,7 @@ section{
      border: 1px solid rgb(61, 60, 57);   /*rgba(225,225,225,0.25)*/
     
 }
-/*I THINK IM GONNA DELETE THIS PART container::before*/
+ 
 .container::before{
     content: '';
     position: absolute;
@@ -125,17 +125,17 @@ section{
 .container .row100 .col .inputBox input,
 .container .row100 .col .inputBox textarea  /*this line for the textarea*/
  {
-    position: absolute;  /*will make me remove the span(1st name, last name , phone&email) and move it inside the input */
+    position: absolute;   
     /*right:10px;*/
     /* bottom: 10px; */
     width:100%;
     height:100%;
-    background-color: transparent; /*to remove the bg from input and make the span appear inside*/
+    background-color: transparent;  
     box-shadow: none; /**/
     outline: none;    /**/
     border: none;
-    font-size: 1.3rem;  /*from here its for the input typing*/
-    padding: 10px;  /*0 10px*/
+    font-size: 1.3rem;   
+    padding: 10px;  
     z-index: 1;
     color:black
 }
@@ -153,11 +153,9 @@ section{
 }
 
 
-/*this part down directly NEW for me */
-/*it will be for the text part(the span with text class to make the animation'when we click on the input the span(as a like space holder will move up)') */
 .container .row100 .col .inputBox input:focus + .text,
 .container .row100 .col .inputBox textarea:valid + .text
-.container .row100 .col .inputBox textarea:focus + .text, /*add those after i did textarea:valid ~ .line*/
+.container .row100 .col .inputBox textarea:focus + .text, 
 .container .row100 .col .inputBox textarea:valid + .text
 {
     top:-35px;
@@ -165,7 +163,6 @@ section{
     
 }
 
-/*now we will make class line which for span 2 make it appear when the input are empty*/
 
 .container .row100 .col .inputBox .line{
     position: absolute;
@@ -178,21 +175,12 @@ section{
     border-radius: 2px;
     pointer-events: none;
 }
-/*   THIS WORKING AS IT MUST BE BUT WANAN TRY ANOTHER ONE DOWN IT 2 NOT DAMAGE THIS ONE
-.container .row100 .col .inputBox input:focus ~ .line,
-.container .row100 .col .inputBox textarea:valid ~ .line{
-    height:100%;
-}*/
+ 
 
-/*.container .row100 .col .inputBox input:focus ~ .line,
+
+.container .row100 .col .inputBox input:focus ~ .line,    
 .container .row100 .col .inputBox input:valid ~ .line{
-    height:100%;
-}*/
-
-
-.container .row100 .col .inputBox input:focus ~ .line,   /*this will make the input and the span(as a placeHolder) disappear when i put input  */
-.container .row100 .col .inputBox input:valid ~ .line{
-    height:100%;  /*this will make the input height enough with the size of typing*/
+    height:100%;   
 }
 
 
@@ -233,7 +221,7 @@ transition: .5s ease-in-out;
     position: fixed;
     bottom: 20px;
     left:10px;
-    z-index: 99;  /*wanna try it another num*/
+    z-index: 99;   
     border:none;
     outline: none;
     /*background-color: #e85b77;*/
