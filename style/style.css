@@ -51,10 +51,10 @@ a{
     justify-content: space-between;
     min-height: 70px;
     padding:0 25px;
-    width: 100%;    /*i add those last 3 2 make it stay when scrolling*/  /**/
+    width: 100%;     
     position: fixed;       /**/
     /*background-color: #262626;*/
-        background-color: rgba(0,0,0,0.6);   /*this what i put 1st but 2nd look better i think will see later  */
+        background-color: rgba(0,0,0,0.6);   
    /* background-color: #262626;*/
     /*background-color: transparent;*/
     
@@ -137,16 +137,16 @@ a{
     }
 
     .nav-menu{
-        position: fixed; /*when we scroll down this will ensure the menu will be on the screen*/
+        position: fixed;  
         left:-100%;
         top:70px;
         gap:0;
         flex-direction: column;
-       /* background-color: var(--light-black);  removed it and will make glass color*/
+       /* background-color: var(--light-black);  */
         width:100%;
         text-align: center;
         transition: .5s ease-in-out;
-        max-height: 100vh;/*i add the last 3 lins to make it look better '135- 137'*/
+        max-height: 100vh; 
        /* padding:30%;
        /* font-size: 1.5rem;*/
        margin-top:150px;
@@ -155,7 +155,7 @@ a{
    
 
     .nav-item{
-        margin:16px 0;  /*2 give space up and down between them when they appear*/
+        margin:16px 0;   
     }
      
     /*trying 2 make line move under the links on hover*/
@@ -166,7 +166,7 @@ a{
         content: '';
         position: absolute;
         bottom: -5px;
-       /* top:20px;   OR i can use top instead of bottom*/
+       /* top:20px;    */
          left: 0;
         width:100%;
         height: 1px;
@@ -200,20 +200,20 @@ a{
 }
 
 
-main #vid{    /*i did this coz without the hamburger menu doesn't work  */
+main #vid{     
     
   
   /* padding-top:70px;*/
    width:100%;
-   object-fit: cover;  /*to make the vid cover small screen*/
+   object-fit: cover;   
    position: absolute;
-   z-index: -1;  /*to make me able 2 press on the menu*/
+   z-index: -1;   
    height: 100vh;
    filter: blur(10);
 }
 
 
-/*this media down is for video bg*/
+/*  media for video bg*/
 @media(min-aspect-ratio: 16/9) {
     #vid{
         width:100%;
@@ -232,7 +232,7 @@ main #vid{    /*i did this coz without the hamburger menu doesn't work  */
 /*
  .social-icons li img  {
     width:20px;
-    filter: invert(1);  /*will make it back when i position the icons */
+    filter: invert(1);   
     
 */
 
@@ -300,14 +300,14 @@ section{
 
 .social-icons li a{
     display:inline-block;
-    filter: invert(1);  /*THIS will turn their color from black 2 white :) */
+    filter: invert(1);   
     margin-right: 40px;
-    transform: scale(.5);  /*this will make them smaller and go down little*/
+    transform: scale(.5);   
     transition: .05s;
 }
 
 .social-icons li a:hover{
-    transform: scale(0.5) translateY(-15px); /*mines will move it to up*/
+    transform: scale(0.5) translateY(-15px);  
 }
 
 /*for bigger screens*/
@@ -378,9 +378,6 @@ section{
     margin-top: 10px;
     gap:40px;
     transition:  .3s ease;
-           /**/  /**/  /**/ 
-           /**/  /**/  /**/ 
-           /**/  /**/  /**/  
            padding:100px;
 }
 
@@ -459,7 +456,7 @@ section{
 /*
 .popup .close-btn{
     position: absolute;
-    left:20px; /*i can make it right*/
+    left:20px;  
  /*   top:20px;
     width:30px;
     height: 30px;
@@ -468,8 +465,8 @@ section{
     font-size: 1.5rem;
     border-radius: 50%;
     font-weight: 600;
-    text-align: center;  /*may remove*/
- /*   line-height: 30px;   /*to make the x in the middle*/
+    text-align: center;   
+ /*   line-height: 30px;    
 /*    cursor: pointer;
 }
 
@@ -516,7 +513,7 @@ max-width: 300px;
 
 .overlay-1{
     position:absolute;
-    bottom: 27px;  /*without button its perfect  */ 
+    bottom: 27px;   
    /*bottom:82px;  if i wanna uncomment the button this will be perfect */
      background-color:rgba(0, 0, 0, 0.5); 
     width:100%;
@@ -556,7 +553,7 @@ max-width: 300px;
     position: fixed;
     bottom: 20px;
     right:10px;
-    z-index: 99;  /*wanna try it another num*/
+    z-index: 99;   
     border:none;
     outline: none;
     background-color: var(--dark-pink);
@@ -615,7 +612,7 @@ body {
    /* background-color: #f5f5dc;*/
     /* background-image:linear-gradient(#f5f5dc,#cece7c) ; */
     /*background-color: aliceblue;*/
-    background-image: url(/images/bg\ menu5.jpg) ;   /*I THINK THIS WILL BE THE FINAL*/
+    background-image: url(/images/bg\ menu5.jpg) ;   
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
