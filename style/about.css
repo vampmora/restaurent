@@ -40,9 +40,9 @@ a{
     justify-content: space-between;
     min-height: 70px;
     padding:0 25px;
-    width: 100%;    /*i add the those last 3 2 make it stay when scrolling*/  /**/
+    width: 100%;    
     position: fixed;       /**/
-    top: 0;   /*i add it extra coz without it it will make the nav in the middle of the screen here*/ 
+    top: 0;     
     /*background-color: #262626;*/
     /* background-color: rgba(0,0,0,0.6);   this what i put 1st but 2nd look better i think will see later  */
    /* background-color: #262626;*/
@@ -119,16 +119,16 @@ a{
     }
 
     .nav-menu{
-        position: fixed; /*when we scroll down this will ensure the menu will be on the screen*/
+        position: fixed;  
         left:-100%;
         top:70px;
         gap:0;
         flex-direction: column;
-       /* background-color: var(--light-black);  removed it and will make glass color*/
+       /* background-color: var(--light-black);   */
         width:100%;
         text-align: center;
         transition: .5s ease-in-out;
-        max-height: 100vh;/*i add the last 3 lins to make it look better '135- 137'*/
+        max-height: 100vh; 
        /* padding:30%;
        /* font-size: 1.5rem;*/
        margin-top:150px;
@@ -138,10 +138,10 @@ a{
    
 
     .nav-item{
-        margin:16px 0;  /*2 give space up and down between them when they appear*/
+        margin:16px 0;   
     }
      
-    /*trying 2 make line move under the links on hover*/
+     
       .nav-menu .nav-link{
         position: relative;
       }
@@ -149,7 +149,7 @@ a{
         content: '';
         position: absolute;
         bottom: -5px;
-       /* top:20px;   OR i can use top instead of bottom*/
+       /* top:20px;    */
          left: 0;
         width:100%;
         height: 1px;
